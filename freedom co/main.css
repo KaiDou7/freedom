@@ -1,0 +1,246 @@
+/* typography */
+@font-face{
+    src: url(Recoleta);
+    font-family: recoleta;
+}
+body,button,input{
+    font-family: recoleta;
+    color: #ffffff;
+}
+/* resets */
+html {
+    box-sizing: border-box;
+}
+*, *::before,*::after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    background-color: #000000;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 4em;
+}
+
+.hero{
+    background-image:  url(https://images.unsplash.com/photo-1476988552461-c1cb135cd48b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
+    min-height: 100vh;
+    background-size: cover;
+    background-position:  50% 100%;
+    position: relative;
+
+}    
+
+.cta{
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: .6em 2em;
+    background-color: #000000;
+    border-radius: 1000px;
+    border: none;
+    transition: background-color 300ms ease-in,transform 300ms ease-in, color 300ms ease-in ;
+}
+
+.cta:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-8px);
+}
+
+.hero-header{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 10rem;
+}
+
+.linear {
+    position: absolute;
+    bottom: 0em;
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.land {
+    margin-top: 10em;
+    padding-top: 8em;
+}
+
+.news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: 400px;
+}
+
+.letter{
+    position: absolute;
+    margin: 0;
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4.8em;
+    font-weight: 900;
+}
+
+.n{
+    background-image: url(https://images.unsplash.com/photo-1491554150239-a9062e24de5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+   
+}
+
+.e{
+    background-image: url(https://images.unsplash.com/photo-1462926703708-44ab9e271d97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    /* top: -100px; */
+}
+
+.w{
+    background-image: url(https://images.unsplash.com/photo-1465310477141-6fb93167a273?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+}
+
+.s{
+    background-image: url(https://images.unsplash.com/photo-1536543584364-08cc0b9c911b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    /* top: -100px; */
+}
+
+.landforms{
+    margin-top: 7em;
+}
+
+.landform-header{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.landform-para{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 161%;
+    letter-spacing: 5%;
+}
+
+.newsletter{
+    margin-top: 8em;
+}
+
+.newsletter-heading{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: .3em;
+}
+.newsletter-para{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.email{
+    font-size: 1.3rem;
+    display: block;
+    margin: 0 auto 1em;
+    width: 60%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: .5em 1em;
+    background-color: #595959;
+    border: none;
+    border-radius: 10px;
+}
+.submit{
+    font-size: 1.3rem;
+    display: block;
+    margin: 0 auto 2em;
+    width: 60%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: .5em 1em;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media(max-width:1300px){
+    .hero-header{
+        font-size: 8rem;
+    }
+}
+
+@media(max-width:1100px){
+    .hero-header{
+        font-size: 6rem;
+    }
+    .cta{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:900px){
+    .land{
+        padding: 0 2em;
+    }
+}
+
+@media(max-width:800px){
+    .block{
+        height: 300px;
+    }
+    .letter{
+        bottom: -20%;
+    }
+}
+
+@media(max-width:600px){
+    .hero-header{
+        font-size: 4rem;
+    }
+    .block{
+        height: 200px;
+    }
+    .letter{
+        bottom: -30%;
+    }
+   
+}
+
+@media(max-width:500px){
+    .logo{
+        width: 50%;
+    }
+}
+
+@media(max-width:460px){
+    :root{
+        font-size: 14px;
+    }
+    .nav{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
